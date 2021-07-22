@@ -1,0 +1,112 @@
+/*
+ * species_and_reactions.java
+ */
+
+import com.comsol.model.*;
+import com.comsol.model.util.*;
+
+/** Model exported on Jun 8 2021, 10:52 by COMSOL 5.6.0.401. */
+public class species_and_reactions {
+
+  public static Model run() {
+    Model model = ModelUtil.create("Model");
+
+    model.modelPath("/Users/caquineau/SynologyDrives/comsol/comsolMesSimul/translate");
+
+    model.component().create("comp1", true);
+
+    model.component("comp1").geom().create("geom1", 1);
+
+    model.component("comp1").mesh().create("mesh1");
+
+    model.component("comp1").physics().create("plas", "ColdPlasma", "geom1");
+    model.component("comp1").physics().create("cir", "Circuit", "geom1");
+
+    model.study().create("std1");
+    model.study("std1").create("time", "Transient");
+    model.study("std1").feature("time").activate("plas", true);
+    model.study("std1").feature("time").activate("cir", true);
+
+    model.param().label("Geom");
+    model.param().set("rayon", "3.2[cm]");
+    model.param().set("d", "1[mm]");
+    model.param().set("ep", "0.635[mm]");
+    model.param().set("As", "pi*rayon^2");
+    model.param().group().create("par2");
+    model.param("par2").label("Physical Data");
+    model.param("par2").set("epsAl2O3", "9.6");
+    model.param("par2").set("frequence", "3e3[Hz]");
+    model.param("par2").set("w0", "2*pi[radian]*frequence");
+    model.param("par2").set("Vmax", "6[kV]");
+    model.param("par2").set("eriode", "1/frequence");
+    model.param().rename("eriode", "periode");
+    model.param("par2").set("PA", "101325[Pa]");
+    model.param("par2").set("Temp", "293[K]");
+    model.param("par2").set("densTotal", "PA/k_B_const/Temp");
+    model.param().group().create("par3");
+    model.param("par3").label("Circuit");
+    model.param("par3").set("Res", "110e3[V/A]");
+    model.param("par3").set("Linduc", "418[mH]");
+    model.param("par3").set("Capa", "35[pF]");
+
+    model.component("comp1").geom("geom1").create("i1", "Interval");
+    model.component("comp1").geom("geom1").feature("i1").set("specify", "len");
+    model.component("comp1").geom("geom1").feature("i1").set("left", "-ep");
+    model.component("comp1").geom("geom1").feature("i1").setIndex("len", "ep", 0);
+    model.component("comp1").geom("geom1").feature("i1").setIndex("len", "dep", 1);
+    model.component("comp1").geom("geom1").run("");
+    model.component("comp1").geom("geom1").feature("i1").setIndex("len", "d", 1);
+    model.component("comp1").geom("geom1").feature("i1").setIndex("len", "ep", 2);
+    model.component("comp1").geom("geom1").run("fin");
+
+    model.component("comp1").material().create("mat1", "Common");
+    model.component("comp1").material("mat1").selection().set(1, 3);
+    model.component("comp1").material("mat1").propertyGroup("def").set("relpermittivity", new String[]{"epsAl2O3"});
+
+    model.component("comp1").physics("plas").selection().set(2);
+    model.component("comp1").physics("plas").prop("CrossSectionArea").set("A", "As");
+    model.component("comp1").physics("plas").prop("ElectronProperties").set("ReducedProps", true);
+    model.component("comp1").physics("plas").prop("ElectronProperties")
+         .set("MeanElectronEnergyModel", "LocalFieldApproximationE");
+    model.component("comp1").physics("plas").prop("ShapeProperty").set("Formulation", "FEMLinear");
+    model.component("comp1").physics("plas").create("ccn1", "ChargeConservation", 1);
+    model.component("comp1").physics("plas").selection().set(1, 2, 3);
+    model.component("comp1").physics("plas").feature("ccn1").selection().set(1, 3);
+    model.component("comp1").physics("plas").create("gnd1", "Ground", 0);
+    model.component("comp1").physics("plas").feature("gnd1").selection().set(1);
+    model.component("comp1").physics("plas").create("term1", "Terminal", 0);
+    model.component("comp1").physics("plas").feature("term1").selection().set(4);
+    model.component("comp1").physics("plas").create("wall1", "WallDriftDiffusion", 0);
+    model.component("comp1").physics("plas").feature("wall1").selection().set(2, 3);
+    model.component("comp1").physics("plas").feature("wall1").set("incmig", true);
+    model.component("comp1").physics("plas").create("sca1", "SurfaceChargeAccumulation", 0);
+    model.component("comp1").physics("plas").feature("sca1").selection().set(2, 3);
+    model.component("comp1").physics("cir").create("R1", "Resistor", -1);
+    model.component("comp1").physics("cir").feature("R1").set("R", "Res");
+    model.component("comp1").physics("cir").create("L1", "Inductor", -1);
+    model.component("comp1").physics("cir").feature("L1").set("L", "Linduc");
+    model.component("comp1").physics("cir").feature("L1").setIndex("Connections", 2, 0, 0);
+    model.component("comp1").physics("cir").feature("L1").setIndex("Connections", 3, 1, 0);
+    model.component("comp1").physics("cir").create("D1", "Diode", -1);
+    model.component("comp1").physics("cir").feature().remove("D1");
+    model.component("comp1").physics("cir").create("C1", "Capacitor", -1);
+    model.component("comp1").physics("cir").feature("C1").setIndex("Connections", 3, 0, 0);
+    model.component("comp1").physics("cir").feature("C1").setIndex("Connections", 0, 1, 0);
+    model.component("comp1").physics("cir").feature("C1").set("C", "Capa");
+    model.component("comp1").physics("cir").create("V1", "VoltageSource", -1);
+    model.component("comp1").physics("cir").feature("V1").set("sourceType", "SineSource");
+    model.component("comp1").physics("cir").feature("V1").set("value", "Vmax");
+    model.component("comp1").physics("cir").feature("V1").set("freq", "frequence");
+    model.component("comp1").physics("cir").feature("V1").setIndex("Connections", 0, 0, 0);
+    model.component("comp1").physics("cir").feature("V1").setIndex("Connections", 1, 1, 0);
+    model.component("comp1").physics("plas").feature("term1").set("TerminalType", "Current");
+    model.component("comp1").physics("plas").feature("term1").set("I0", "cir.IvsU1_i");
+    model.component("comp1").physics("cir").create("G1", "VoltageCurrentSource", -1);
+    model.component("comp1").physics("cir").feature().remove("G1");
+    model.component("comp1").physics("cir").create("IvsU1", "ModelDeviceIV", -1);
+    model.component("comp1").physics("cir").feature("IvsU1").setIndex("Connections", 0, 0, 0);
+    model.component("comp1").physics("cir").feature("IvsU1").setIndex("Connections", 3, 1, 0);
+    model.component("comp1").physics("cir").feature("IvsU1").set("V", "plas.term1.V0e_1");
+
+    return model;
+  }

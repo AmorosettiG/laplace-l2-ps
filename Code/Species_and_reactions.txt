@@ -1,0 +1,2163 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% Set ZDplaskin (juillet 2020) %%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%    SPECIES   %%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%l'espece ANY_NEUTRAL est constante et représente la densité totale de neutre (en gros c'est N2 mais je prepare le terrain pour les simulations dans air)
+SPECIES:ANY_NEUTRAL
+TYPE:NEUTRAL
+MASS:28
+SIGMA:3.667
+EPSILON_K:99.8
+COEF_DIFF:777
+
+%%%%%%% molecular N2 %%%%%%%
+%---------------------------
+
+%%Ground state of N2 (electronic)
+
+%molecular N2
+SPECIES:N2
+TYPE:NEUTRAL
+MASS:28
+SIGMA:3.667
+EPSILON_K:99.8
+%COEF_DIFF:0.17
+COEF_DIFF:777
+
+%molecular N2(v1)
+SPECIES:N2_v1
+TYPE:NEUTRAL
+MASS:28
+SIGMA:3.667
+EPSILON_K:99.8
+%COEF_DIFF:0.17
+COEF_DIFF:777
+
+%molecular N2(v2)
+SPECIES:N2_v2
+TYPE:NEUTRAL
+MASS:28
+SIGMA:3.667
+EPSILON_K:99.8
+%COEF_DIFF:0.17
+COEF_DIFF:777
+
+%molecular N2(v3)
+SPECIES:N2_v3
+TYPE:NEUTRAL
+MASS:28
+SIGMA:3.667
+EPSILON_K:99.8
+%COEF_DIFF:0.17
+COEF_DIFF:777
+
+%molecular N2(v4)
+SPECIES:N2_v4
+TYPE:NEUTRAL
+MASS:28
+SIGMA:3.667
+EPSILON_K:99.8
+%COEF_DIFF:0.17
+COEF_DIFF:777
+
+%molecular N2(v5)
+SPECIES:N2_v5
+TYPE:NEUTRAL
+MASS:28
+SIGMA:3.667
+EPSILON_K:99.8
+%COEF_DIFF:0.17
+COEF_DIFF:777
+
+%molecular N2(v6)
+SPECIES:N2_v6
+TYPE:NEUTRAL
+MASS:28
+SIGMA:3.667
+EPSILON_K:99.8
+%COEF_DIFF:0.17
+COEF_DIFF:777
+
+%molecular N2(v7)
+SPECIES:N2_v7
+TYPE:NEUTRAL
+MASS:28
+SIGMA:3.667
+EPSILON_K:99.8
+%COEF_DIFF:0.17
+COEF_DIFF:777
+
+%molecular N2(v8)
+SPECIES:N2_v8
+TYPE:NEUTRAL
+MASS:28
+SIGMA:3.667
+EPSILON_K:99.8
+%COEF_DIFF:0.17
+COEF_DIFF:777
+
+Excited states of N2 (electronic)
+
+SPECIES:N2A
+TYPE:NEUTRAL
+MASS:28
+SIGMA:3.667
+EPSILON_K:99.8
+%COEF_DIFF:0.179
+COEF_DIFF:777
+
+%N2(a'1 Sigma u -)
+SPECIES:N2a1
+TYPE:NEUTRAL
+MASS:28
+SIGMA:3.667
+EPSILON_K:99.8
+%COEF_DIFF:0.17
+COEF_DIFF:777
+
+SPECIES:N2B
+TYPE:NEUTRAL
+MASS:28
+SIGMA:3.667
+EPSILON_K:99.8
+%COEF_DIFF:0.17
+COEF_DIFF:777
+
+SPECIES:N2C
+TYPE:NEUTRAL
+MASS:28
+SIGMA:3.667
+EPSILON_K:99.8
+%COEF_DIFF:0.17
+COEF_DIFF:777
+
+
+%%%%%%% molecular 02 %%%%%%%
+%---------------------------
+
+%%Ground state of O2 (electronic)
+
+SPECIES:O2
+TYPE:NEUTRAL
+MASS:32
+SIGMA:3.433
+EPSILON_K:113
+%COEF_DIFF:0.182
+COEF_DIFF:777
+
+%molecular 02(v1)
+SPECIES:O2_v1
+TYPE:NEUTRAL
+MASS:32
+SIGMA:3.433
+EPSILON_K:113
+%COEF_DIFF:0.182
+COEF_DIFF:777
+
+%molecular 02(v2)
+SPECIES:O2_v2
+TYPE:NEUTRAL
+MASS:32
+SIGMA:3.433
+EPSILON_K:113
+%COEF_DIFF:0.182
+COEF_DIFF:777
+
+%molecular 02(v3)
+SPECIES:O2_v3
+TYPE:NEUTRAL
+MASS:32
+SIGMA:3.433
+EPSILON_K:113
+%COEF_DIFF:0.182
+COEF_DIFF:777
+
+%molecular 02(v4)
+SPECIES:O2_v4
+TYPE:NEUTRAL
+MASS:32
+SIGMA:3.433
+EPSILON_K:113
+%COEF_DIFF:0.182
+COEF_DIFF:777
+
+
+
+%%Excited states of O2 (electronic)
+
+SPECIES:O2a1
+TYPE:NEUTRAL
+MASS:32
+SIGMA:3.433
+EPSILON_K:113
+%COEF_DIFF:0.182
+COEF_DIFF:777
+
+SPECIES:O2b1
+TYPE:NEUTRAL
+MASS:32
+SIGMA:3.433
+EPSILON_K:113
+%COEF_DIFF:0.187
+COEF_DIFF:777
+
+SPECIES:O2A
+TYPE:NEUTRAL
+MASS:32
+SIGMA:3.433
+EPSILON_K:113
+%COEF_DIFF:0.182
+COEF_DIFF:777
+
+SPECIES:O2_4.5
+TYPE:NEUTRAL
+MASS:32
+SIGMA:3.433
+EPSILON_K:113
+%COEF_DIFF:0.182
+COEF_DIFF:777
+%remarque : coefficient de diffusion à l'arrache (a verifier)
+
+%%%%%  N atoms  %%%%%%%
+%----------------------
+
+SPECIES:N4S
+TYPE:NEUTRAL
+MASS:14
+SIGMA:2.94
+EPSILON_K:78
+%COEF_DIFF:0.28
+COEF_DIFF:777
+
+SPECIES:N2P
+TYPE:NEUTRAL
+MASS:14
+SIGMA:2.94
+EPSILON_K:78
+%COEF_DIFF:0.185
+COEF_DIFF:777
+
+SPECIES:N2D
+TYPE:NEUTRAL
+MASS:14
+SIGMA:2.94
+EPSILON_K:78
+%COEF_DIFF:0.227
+COEF_DIFF:777
+
+%%%%%  O atoms  %%%%%%%
+%----------------------
+
+SPECIES:O3P
+TYPE:NEUTRAL
+MASS:16
+SIGMA:666
+EPSILON_K:666
+%COEF_DIFF:0.292
+COEF_DIFF:777
+
+SPECIES:O1S
+TYPE:NEUTRAL
+MASS:16
+SIGMA:666
+EPSILON_K:666
+%COEF_DIFF:0.25
+COEF_DIFF:777
+%on ne connait pas vraiment COEF_DIFF donc on suppose que c'est le même que pour O1D...
+
+SPECIES:O1D
+TYPE:NEUTRAL
+MASS:16
+SIGMA:666
+EPSILON_K:666
+%COEF_DIFF:0.25
+COEF_DIFF:777
+
+%%%%%% other species %%%%%%
+
+SPECIES:NO
+TYPE:NEUTRAL
+MASS:30
+SIGMA:3.47
+EPSILON_K:119
+%COEF_DIFF:666
+COEF_DIFF:777
+
+SPECIES:NO2
+TYPE:NEUTRAL
+MASS:46
+SIGMA:666
+EPSILON_K:666
+%COEF_DIFF:0.1289
+COEF_DIFF:777
+
+SPECIES:NO3
+TYPE:NEUTRAL
+MASS:62
+SIGMA:666
+EPSILON_K:666
+%COEF_DIFF:0.1053
+COEF_DIFF:777
+
+SPECIES:O3
+TYPE:NEUTRAL
+MASS:48
+SIGMA:666
+EPSILON_K:666
+%COEF_DIFF:0.164
+COEF_DIFF:777
+
+SPECIES:N2O
+TYPE:NEUTRAL
+MASS:44
+SIGMA:3.879
+EPSILON_K:220
+%COEF_DIFF:666
+COEF_DIFF:777
+%le coefficient de diffusion est pris dans l'air faute de l'avoir dans N2
+
+SPECIES:N2O4
+TYPE:NEUTRAL
+MASS:92
+SIGMA:666
+EPSILON_K:666
+%COEF_DIFF:0.0855
+COEF_DIFF:777
+%attention le coeff de diff est celui de N2O5 car on ne connait pas celui de N2O4...pour l'instant
+
+SPECIES:N2O5
+TYPE:NEUTRAL
+MASS:108
+SIGMA:666
+EPSILON_K:666
+%COEF_DIFF:0.0855
+COEF_DIFF:777
+
+%%electrons
+%----------
+SPECIES:e
+MASS:9.1e-31
+
+%%IONS :
+%-------
+%Np= ion N+
+SPECIES:Np
+TYPE:ION
+MASS:14
+
+
+%N2p=ion N2+
+SPECIES:N2p
+TYPE:ION
+MASS:28
+
+
+%N3p= ion N3+
+SPECIES:N3p
+TYPE:ION
+MASS:42
+
+
+%N4p= ion N4+
+SPECIES:N4p
+TYPE:ION
+MASS:56
+
+
+%NOp=ion NO+ 
+SPECIES:NOp
+TYPE:ION
+MASS:30
+
+%---ajout simon Mai 2020 ----- 
+%O2p= ion O2+
+SPECIES:O2p
+TYPE:ION
+MASS:32
+
+%Om= ion negatif O-
+SPECIES:Om
+TYPE:ION
+MASS:16
+
+%---ajout corentin juin 2020 ----- 
+%Op= ion O+
+SPECIES:Op
+TYPE:ION
+MASS:16
+
+%O4p= ion O4+
+SPECIES:O4p
+TYPE:ION
+MASS:64
+
+%O2m= ion negatif O2-
+SPECIES:O2m
+TYPE:ION
+MASS:32
+
+%O3m= ion negatif O3-
+SPECIES:O3m
+TYPE:ION
+MASS:48
+
+%O4m= ion negatif O4-
+SPECIES:O4m
+TYPE:ION
+MASS:64
+
+
+%NO2p=ion NO2+ 
+SPECIES:NO2p
+TYPE:ION
+MASS:46
+
+%N2Op=ion N2O+ 
+SPECIES:N2Op
+TYPE:ION
+MASS:44
+
+%NOm=ion negatif NO-
+SPECIES:NOm
+TYPE:ION
+MASS:30
+
+%NO2m=ion negatif NO2-
+SPECIES:NO2m
+TYPE:ION
+MASS:46
+
+%NO3m=ion negatif NO3- 
+SPECIES:NO3m
+TYPE:ION
+MASS:46
+
+%NO3*m=ion negatif NO3-* 
+SPECIES:NO3*m
+TYPE:ION
+MASS:46
+
+%N2Om=ion negatif N2O- 
+SPECIES:N2Om
+TYPE:ION
+MASS:44
+
+%%molecular ions
+%---------------
+%NOpNO= molecular ion NO.NO+
+SPECIES:NOpNO
+TYPE:ION
+MASS:60
+
+%NOpN2= molecular ion N2.NO+
+SPECIES:NOpN2
+TYPE:ION
+MASS:58
+
+%NOpO2= molecular ion O2.NO+
+SPECIES:NOpO2
+TYPE:ION
+MASS:62
+
+%O2pN2= molecular ion N2.O2+
+SPECIES:O2pN2
+TYPE:ION
+MASS:60
+%----------------------------
+
+%neutrals to the walls (adsorption)
+%nitrogen species
+SPECIES:N4S_w
+TYPE:N_WALL
+MASS:14
+
+SPECIES:N2P_w
+TYPE:N_WALL
+MASS:14
+
+SPECIES:N2D_w
+TYPE:N_WALL
+MASS:14
+
+SPECIES:N2A_w
+TYPE:N_WALL
+MASS:28
+
+SPECIES:N2a1_w
+TYPE:N_WALL
+MASS:28
+
+SPECIES:N2B_w
+TYPE:N_WALL
+MASS:28
+
+SPECIES:N2C_w
+TYPE:N_WALL
+MASS:28
+
+%species with oxygen
+%especes concernees : 
+SPECIES:O2a1_w
+TYPE:N_WALL
+MASS:32
+
+SPECIES:O2b1_w
+TYPE:N_WALL
+MASS:32
+
+SPECIES:O2A_w
+TYPE:N_WALL
+MASS:32
+
+SPECIES:O3P_w
+TYPE:N_WALL
+MASS:16
+
+SPECIES:O1S_w
+TYPE:N_WALL
+MASS:16
+
+SPECIES:O1D_w
+TYPE:N_WALL
+MASS:16
+
+SPECIES:NO_w
+TYPE:N_WALL
+MASS:30
+
+SPECIES:NO2_w
+TYPE:N_WALL
+MASS:46
+
+SPECIES:NO3_w
+TYPE:N_WALL
+MASS:62
+
+SPECIES:O3_w
+TYPE:N_WALL
+MASS:48
+
+SPECIES:N2O_w
+TYPE:N_WALL
+MASS:44
+
+SPECIES:N2O4_w
+TYPE:N_WALL
+MASS:92
+
+SPECIES:N2O5_w
+TYPE:N_WALL
+MASS:108
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%    REACTIONS   %%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%    rotational excitation and relaxation (fast quenching)    %%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%pas inclus a ce stade (quel intérêt ? pas dans mon BOLSIG2020)
+%e+N2=e+N2(rot) par exemple 
+%puis N2(rot)+ANY_NEUTRAL=N2+ANY_NEUTRAL (quenching)
+%ça ne doit jouer que sur la FDEE des electrons car ZDplaskin appelle BOLSIG
+%mais comme dans mon cas on a déjà fait les calculs avant 
+%et qu'on ne refait pas appel à BOLSIG ce n'est pas utile je pense
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% vibrational excitation / de-excitation by electron impact [BOLSIG+] %%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%excitation of vibrational levels of N2 from the ground state
+%[MULTI]
+REACTION:e+N2=e+@B
+k:@K
+
+@B= N2_v1 N2_v2 N2_v3 N2_v4 N2_v5 N2_v6 N2_v7 N2_v8
+@K= BOLSIG(28) BOLSIG(30) BOLSIG(32) BOLSIG(34) BOLSIG(36) BOLSIG(38) BOLSIG(40) BOLSIG(42)
+%[end]
+
+
+%inverse process : de-excitation of vibrational levels of N2(v) down to the ground state
+%[MULTI]
+REACTION:e+@A=e+N2
+k:@K
+
+@A= N2_v1 N2_v2 N2_v3 N2_v4 N2_v5 N2_v6 N2_v7 N2_v8
+@K= BOLSIG(29) BOLSIG(31) BOLSIG(33) BOLSIG(35) BOLSIG(37) BOLSIG(39) BOLSIG(41) BOLSIG(43)
+%[end]
+
+
+
+
+%excitation of vibrational levels of O2 from the ground state
+%[MULTI]
+REACTION:e+O2=e+@B
+k:@K
+
+@B= O2_v1 O2_v2 O2_v3 O2_v4
+@K= BOLSIG(44) BOLSIG(46) BOLSIG(48) BOLSIG(50)
+%[end]
+
+%inverse process: de-excitation of vibrational levels of O2 down to the ground state
+%[MULTI]
+REACTION:e+@A=e+O2
+k:@K
+
+@A= O2_v1 O2_v2 O2_v3 O2_v4
+@K= BOLSIG(45) BOLSIG(47) BOLSIG(49) BOLSIG(51)
+%[end]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%% vibrational-translational relaxation [Capitelli2000, page 105] %%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%% N2 molecules %%%%%
+
+%[MULTI]
+REACTION:@A+N2=@B+N2
+k:@K*(7.8e-12*T*exp(-218/T^(1/3)+690/T)/(1-exp(-0.29*11605/T)))
+
+@A= N2_v1 N2_v2 N2_v3 N2_v4 N2_v5 N2_v6 N2_v7 N2_v8
+@B= N2 N2_v1 N2_v2 N2_v3 N2_v4 N2_v5 N2_v6 N2_v7
+@K= 1 2 3 4 5 6 7 8
+%[end]
+
+
+%[MULTI]
+REACTION:@A+N2=@B+N2
+k:@K*(7.8e-12*T*exp(-218/T^(1/3)+690/T)/(1-exp(-0.29*11605/T)))*exp(-0.29*11605/T)
+
+@A= N2 N2_v1 N2_v2 N2_v3 N2_v4 N2_v5 N2_v6 N2_v7
+@B= N2_v1 N2_v2 N2_v3 N2_v4 N2_v5 N2_v6 N2_v7 N2_v8
+@K= 1 2 3 4 5 6 7 8
+%[end]
+
+
+
+%[MULTI]
+REACTION:@A+N4S=@B+N4S
+k:@K*(4e-16*(T/300)^0.5)
+
+@A= N2_v1 N2_v2 N2_v3 N2_v4 N2_v5 N2_v6 N2_v7 N2_v8
+@B= N2 N2_v1 N2_v2 N2_v3 N2_v4 N2_v5 N2_v6 N2_v7
+@K= 1 2 3 4 5 6 7 8
+%[end]
+
+%[MULTI]
+REACTION:@A+N4S=@B+N4S
+k:@K*(4e-16*(T/300)^0.5)*exp(-0.29*11605/T)
+
+@A= N2 N2_v1 N2_v2 N2_v3 N2_v4 N2_v5 N2_v6 N2_v7
+@B= N2_v1 N2_v2 N2_v3 N2_v4 N2_v5 N2_v6 N2_v7 N2_v8
+@K= 1 2 3 4 5 6 7 8
+%[end]
+
+
+
+%[MULTI]
+REACTION:@A+O3P=@B+O3P
+k:@K*(1.2e-13*exp(-27.6/T^(1/3)))
+
+@A= N2_v1 N2_v2 N2_v3 N2_v4 N2_v5 N2_v6 N2_v7 N2_v8
+@B= N2 N2_v1 N2_v2 N2_v3 N2_v4 N2_v5 N2_v6 N2_v7
+@K= 1 2 3 4 5 6 7 8
+%[end]
+
+%[MULTI]
+REACTION:@A+O3P=@B+O3P
+k:@K*(1.2e-13*exp(-27.6/T^(1/3)))*exp(-0.29*11605/T)
+
+@A= N2 N2_v1 N2_v2 N2_v3 N2_v4 N2_v5 N2_v6 N2_v7
+@B= N2_v1 N2_v2 N2_v3 N2_v4 N2_v5 N2_v6 N2_v7 N2_v8
+@K= 1 2 3 4 5 6 7 8
+%[end]
+
+
+
+%%%%% O2 molecules %%%%%
+
+%[MULTI]
+REACTION:@A+O2=@B+O2
+k:@K*(1.35e-12*T*exp(-137.9/T^(1/3))/(1-exp(-0.19*11605/T)))
+
+@A= O2_v1 O2_v2 O2_v3 O2_v4
+@B= O2 O2_v1 O2_v2 O2_v3
+@K= 1 2 3 4
+%[end]
+
+
+%[MULTI]
+REACTION:@A+O2=@B+O2
+k:@K*(1.35e-12*T*exp(-137.9/T^(1/3))/(1-exp(-0.19*11605/T)))*exp(-0.19*11605/T)
+
+@A= O2 O2_v1 O2_v2 O2_v3
+@B= O2_v1 O2_v2 O2_v3 O2_v4
+@K= 1 2 3 4
+%[end]
+
+
+
+
+
+%[MULTI]
+REACTION:@A+O3P=@B+O3P
+k:@K*(4.5e-15*T)
+
+@A= O2_v1 O2_v2 O2_v3 O2_v4
+@B= O2 O2_v1 O2_v2 O2_v3
+@K= 1 2 3 4
+%[end]
+
+
+%[MULTI]
+REACTION:@A+O3P=@B+O3P
+k:@K*(4.5e-15*T)*exp(-0.19*11605/T)
+
+@A= O2 O2_v1 O2_v2 O2_v3
+@B= O2_v1 O2_v2 O2_v3 O2_v4
+@K= 1 2 3 4
+%[end]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% [Capitelli2000, page 159]
+
+
+REACTION:N2A+N2_v6=N2B+N2
+k:3e-11
+REACTION:N2A+N2_v7=N2B+N2_v1
+k:3e-11
+REACTION:N2A+N2_v8=N2B+N2_v2
+k:3e-11
+REACTION:N2B+N2=N2A+N2_v6
+k:3e-11
+REACTION:N2B+N2_v1=N2A+N2_v7
+k:3e-11
+REACTION:N2B+N2_v2=N2A+N2_v8
+k:3e-11
+%remarque : on reste bloqué à N2_v8 dans les réactions suivantes car Serguei ne considere que 8 niveaux vib
+REACTION:N2B+N2_v3=N2A+N2_v8
+k:3e-11
+REACTION:N2B+N2_v4=N2A+N2_v8
+k:3e-11
+REACTION:N2B+N2_v5=N2A+N2_v8
+k:3e-11
+REACTION:N2B+N2_v6=N2A+N2_v8
+k:3e-11
+REACTION:N2B+N2_v7=N2A+N2_v8
+k:3e-11
+REACTION:N2B+N2_v8=N2A+N2_v8
+k:3e-11
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%% excitation of electronic levels by electron impact [Bolsig+] %%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%REMARQUE : il manque de multiples réactions d'excitations électroniques des atomes dans le set ZDplaskin (e.g. e+N4S=e+N2P)
+%elles sont présentes pour O mais pas pour N ! 
+
+
+%reaction directe de formation de N2(A) <=> kossyi (1)
+REACTION:N2+e=N2A+e
+k:BOLSIG(1)
+
+%formation of N2(B) <=>  kossyi (2)
+REACTION:N2+e=N2B+e
+k:BOLSIG(10)
+
+%formation de N2(a'), autre metastable de N2 <=> kossyi(3)
+REACTION:N2+e=N2a1+e
+k:BOLSIG(12)
+
+%formation de N2(C)<=> kossyi (4)
+REACTION:N2+e=N2C+e
+k:BOLSIG(14)
+
+%dissociation N2 <=> kossyi (7,8,9) / Cosby
+REACTION:N2+e=N4S+N2D+e
+k:DISOC_N2
+
+%%%%% excitation O2 to metastable states %%%%%
+%excitation of O2 to metastables <=> kossyi (5)
+REACTION:O2+e=O2a1+e
+k:BOLSIG(6)
+
+%kossyi (6)
+REACTION:O2+e=O2b1+e
+k:BOLSIG(8)
+
+%formation de O2(4.5eV)
+REACTION:e+O2=e+O2_4.5
+k:BOLSIG(52)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%% dissociation of O2  %%%%%
+%kossyi (13)
+REACTION:O2+e=O3P+O3P+e
+k:BOLSIG(3)
+%kossyi (14)
+REACTION:O2+e=O3P+O1D+e
+k:BOLSIG(4)
+REACTION:O2+e=O3P+O1S+e
+k:BOLSIG(5)
+
+%warning : reactions written in the following form directly produces the final products without considering the intermediate excited (and dissociative) states
+%Attention : il me manque la réaction de dissociation qui produit O3P+O1S (9.97eV, pas dans mon set de cross section Biagi)
+%je passe sur les sections de IST Lisbon dans lequel l'excitation à 9.97eV est dispo  => c'est ajouté 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+REACTION:e+O2a1=e+O3P+O3P
+k:BOLSIG(53) 
+
+%kossyi (16)
+REACTION:O3P+e=O1D+e
+k:BOLSIG(20)
+
+%kossyi (17)
+REACTION:O3P+e=O1S+e
+k:BOLSIG(22)
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%% de-excitation of electronic levels by electron impact [Bolsig+] %%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%reaction inverse
+REACTION:N2A+e=N2+e
+k:BOLSIG(2)
+
+%reaction inverse
+REACTION:O2a1+e=O2+e
+k:BOLSIG(7)
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%     ionization by electron impact [Bolsig+]    %%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+REACTION:e+N4S=e+e+Np
+k:BOLSIG(54)
+
+REACTION:e+O3P=e+e+Op
+k:BOLSIG(55)
+
+%kossyi (20) : seuil à 15.58 eV
+REACTION:e+N2=e+e+N2p
+k:BOLSIG(24)
+
+REACTION:e+N2A=e+e+N2p
+k:BOLSIG(56)
+
+%ionisation directe de O2. kossyi (21)
+REACTION:O2+e=O2p+e+e
+k:BOLSIG(25)
+
+REACTION:e+O2a1=e+e+O2p
+k:BOLSIG(57)
+
+%ionisation directe de NO. kossyi (22)
+REACTION:NO+e=NOp+e+e
+k:BOLSIG(26)
+
+%ionisation directe de N2O (pas dans kossyi)
+REACTION:N2O+e=N20p+e+e
+k:BOLSIG(58)
+
+%ionisation directe de NO2 (pas dans kossyi)
+REACTION:e+NO2=e+e+NO2p
+k:BOLSIG(59)
+
+
+%missing ions => les ions ne sont présents dans aucune autre reaction et donc s'accumulent... (reactions commentées dans ZDplaskin)
+%les taux sont néanmoins disponible sur lxcat pour BOLSIG
+%e+O3=e+e+O3p
+%e+NO3=e+e+NO3p
+%e+N2O5=e+e+N2O5p
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%   electron-ion recombination [Capitelli2000, page 141]   %%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%kossyi (38-39)
+%[MULTI]
+REACTION:e+N2p=N4S+@B
+k:@K*(1.8e-7*(300/Te)^0.39)
+
+@B= N4S N2D N2P
+@K= 0.5 0.45 0.05
+%[end]
+
+%kossyi (40)
+%[MULTI]
+REACTION:e+O2p=O3P+@B
+k:@K*(2.7e-7*(300/Te)^0.7)
+
+@B= O3P O1D O1S
+@K= 0.55 0.4 0.05
+%[end]
+
+%kossyi (41-42)
+%[MULTI]
+REACTION:e+NOp=O3P+@B
+k:@K*(4.2e-7*(300/Te)^0.85)
+
+@B= N4S N2D
+@K= 0.2 0.8
+%[end]
+
+
+%kossyi (37)
+REACTION:e+N3p=N2+N4S
+k:2e-7*(300/Te)^0.5
+
+%kossyi (29)
+REACTION:e+N4p=N2+N2
+k:2.3e-6*(300/Te)^0.53
+
+%kossyi (36)
+REACTION:e+N20p=N2+O3P
+k:2e-7*(300/Te)^0.5
+
+%kossyi (35)
+REACTION:e+NO2p=NO+O3P
+k:2e-7*(300/Te)^0.5
+
+%kossyi (30)
+REACTION:e+O4p=O2+O2
+k:1.4e-6*(300/Te)^0.5
+
+%kossyi (33)
+REACTION:e+O2pN2=O2+N2
+k:1.3e-6*(300/Te)^0.5
+
+%kossyi (43)
+%[MULTI]
+REACTION:e+@A+e=@B+e
+k:7e-20*(300/Te)^4.5
+
+@A= Np Op
+@B= N4S O3P
+%[end]
+
+%kossyi (44)
+%[MULTI]
+REACTION:e+@A+ANY_NEUTRAL=@B+ANY_NEUTRAL
+k:6e-27*(300/Te)^1.5
+
+@A= Np Op
+@B= N4S O3P
+%[end]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%         electron attachment         %%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+REACTION:e+O2=Om+O3P
+k:BOLSIG(27)
+
+REACTION:e+NO=Om+N4S
+k:BOLSIG(60)
+%remarque : pas dans BOLSIG Hayashi, c'est NO- qui est formé (seuil à 6.6eV).je pense que c'est la même reaction (même seuil chez d'autres database), seuls les produits sont différents. cette reaction avec NO- n'est présente chez aucun auteur donc je pense vraiment que les produits sont N et O-
+
+REACTION:e+O3=Om+O2
+k:BOLSIG(61)
+
+REACTION:e+O3=O2m+O3P
+k:BOLSIG(62)
+
+REACTION:e+N2O=NOm+N4S
+k:BOLSIG(63)  
+%remarque : dans le set de hayashi c'est N2O- qui est formé mais reaction chez aucun auteur donc je prend les produits de Sergei avec ce taux 
+
+
+REACTION:e+O2+O2=O2m+O2
+k:1.4e-29*(300/Te)*exp(-600/300)*exp(700*(Te-300)/(Te*300)) 
+%k:1.4e-29*(300/Te)*exp(-600/T)*exp(700*(Te-T)/(Te*T))
+%remarque 1 : le rate est donné Pour 300K : mon interpréteur ne sait pas gérer à la fois du T et du Te...
+%remarque 2 : j'ai pris le k de kossyi car il est aussi dans BOLSIG Biagi mais il y a une operation à faire pour tenir compte du troisième corps ("3-body attachment cross section is normalized to gas density in units of 1/cm3.  That is, to recover a rate coefficient in mks units, multiply by the gas density in cgs units." J'ai testé et ça ne fonctionne pas (ou alors je me plante...). => je prends le rate donné par kossyi (fonction de Te)
+
+
+
+%[Capitelli2000, page 142]
+REACTION:e+NO2=Om+NO
+k:1e-11
+REACTION:e+O3P+O2=Om+O2
+k:1e-31
+REACTION:e+O3P+O2=O2m+O3P
+k:1e-31
+
+REACTION:e+O3+ANY_NEUTRAL=O3m+ANY_NEUTRAL
+k:1e-31
+REACTION:e+NO+ANY_NEUTRAL=NOm+ANY_NEUTRAL
+k:8e-31
+REACTION:e+N2O+ANY_NEUTRAL=N2Om+ANY_NEUTRAL
+k:6e-33
+
+%kossyi (46)
+REACTION:e+O2+N2=O2m+N2
+%k:1.07e-31*((300/Te)^2)*exp(-70/T)*exp(1500*(Te-T)/(Te*T))
+k:1.07e-31*((300/Te)^2)*exp(-70/300)*exp(1500*(Te-300)/(Te*300)) 
+%Pour 300K : mon interpréteur ne sait pas gérer à la fois du T et du Te...
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%  electron detachment [Capitelli2000, page 182]    %%%%%%%%%%%%%%       
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%ion Om
+
+REACTION:Om+O3P=O2+e
+k:1.4e-10
+REACTION:Om+N4S=NO+e
+k:2.6e-10
+REACTION:Om+NO=NO2+e
+k:2.6e-10
+REACTION:Om+N2=N2O+e
+k:5e-13
+REACTION:Om+O2=O3+e
+k:5e-15
+REACTION:Om+O2a1=O3+e
+k:3e-10
+REACTION:Om+O2b1=O3P+O2+e
+k:6.9e-10
+REACTION:Om+N2A=O3P+N2+e
+k:2.2e-9
+REACTION:Om+N2B=O3P+N2+e
+k:1.9e-9
+REACTION:Om+O3=O2+O2+e
+k:3e-10
+
+%ion O2m
+
+REACTION:O2m+O3P=O3+e
+k:1.5e-10
+REACTION:O2m+N4S=NO2+e
+k:5e-10
+REACTION:O2m+O2=O2+O2+e
+k:2.7e-10*(Teff/300)^0.5*exp(-5590/Teff)
+REACTION:O2m+O2a1=O2+O2+e
+k:2e-10
+REACTION:O2m+O2b1=O2+O2+e
+k:3.6e-10
+REACTION:O2m+N2=O2+N2+e
+k:1.9e-12*(Teff/300)^0.5*exp(-4990/Teff)
+REACTION:O2m+N2A=O2+N2+e
+k:2.1e-9
+REACTION:O2m+N2B=O2+N2+e
+k:2.5e-9
+
+%ion O3m
+REACTION:O3m+O3P=O2+O2+e
+k:3e-10
+%REACTION:O3m+N2=N2O+O2+e
+%k:1e-15
+%remarque : cette reaction est commentée dans le set de ZDplaskin (et k<1e-15)
+
+%----------------------------------------
+%Detachment for O3^- NO^- N2O^- NO2^- NO3^- has to be verified
+
+REACTION:NOm+N4S=N2O+e
+k:5e-10
+
+%[MULTI]
+REACTION:@A+N4S=NO+@B+e
+k:5e-10
+@A= O3m N2Om NO2m NO3m
+@B= O2 N2 NO NO2
+%[end]
+
+REACTION:NOm+O3P=NO2+e
+k:1.5e-10
+
+%[MULTI]
+REACTION:@A+O3P=NO+@B+e
+k:1.5e-10
+@A= N2Om NO2m NO3m
+@B= NO O2 O3
+%[end]
+
+%[MULTI]
+REACTION:@A+N2A=@B+N2+e
+k:2.1e-9
+@A= O3m NOm N2Om NO2m NO3m
+@B= O3 NO N2O NO2 NO3
+%[end]
+
+
+
+%[MULTI]
+REACTION:@A+N2B=@B+N2+e
+k:2.5e-9
+@A= O3m NOm N2Om NO2m NO3m
+@B= O3 NO N2O NO2 NO3
+%[end]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%  optical transitions and predissociation [Capitelli2000, page 157]  %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+REACTION:N2A=N2
+k:0.5
+REACTION:N2B=N2A
+k:1.34e5
+REACTION:N2a1=N2
+k:1e2
+REACTION:N2C=N2B
+k:2.45e7
+REACTION:O2a1=O2
+k:2.6e-4
+REACTION:O2b1=O2a1
+k:1.5e-3
+REACTION:O2b1=O2
+k:8.5e-2
+REACTION:O2_4.5=O2
+k:11
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%  quenching and excitation of N2 [Capitelli2000, page 159]  %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+REACTION:N2A+O3P=NO+N2D
+k:7e-12
+REACTION:N2A+O3P=N2+O1S
+k:2.1e-11
+REACTION:N2A+N4S=N2+N4S
+k:2e-12
+REACTION:N2A+N4S=N2+N2P
+k:4e-11*(300/T)^0.667
+REACTION:N2A+O2=N2+O3P+O1D
+k:2.1e-12*(T/300)^0.55
+REACTION:N2A+O2=N2+O2a1
+k:2e-13*(T/300)^0.55
+REACTION:N2A+O2=N2+O2b1
+k:2e-13*(T/300)^0.55
+REACTION:N2A+O2=N2O+O3P
+k:2e-14*(T/300)^0.55
+REACTION:N2A+N2=N2+N2
+k:3e-16
+REACTION:N2A+NO=N2+NO
+k:6.9e-11
+REACTION:N2A+N2O=N2+N4S+NO
+k:1e-11
+REACTION:N2A+NO2=N2+O3P+NO
+k:1e-12
+REACTION:N2A+N2A=N2+N2B
+k:3e-10
+
+
+REACTION:N2A+N2A=N2+N2C
+k:1.5e-10
+REACTION:N2B+N2=N2A+N2
+k:3e-11
+REACTION:N2B+N2=N2+N2
+k:2e-12
+REACTION:N2B+O2=N2+O3P+O3P
+k:3e-10
+REACTION:N2B+NO=N2A+NO
+k:2.4e-10
+REACTION:N2C+N2=N2a1+N2
+k:1e-11
+REACTION:N2C+O2=N2+O3P+O1S
+k:3e-10
+REACTION:N2a1+N2=N2B+N2
+k:1.9e-13
+REACTION:N2a1+O2=N2+O3P+O3P
+k:2.8e-11
+REACTION:N2a1+NO=N2+N4S+O3P
+k:3.6e-10
+REACTION:N2a1+N2A=N4p+e
+k:4e-12
+REACTION:N2a1+N2a1=N4p+e
+k:1e-11
+
+%[MULTI]
+REACTION:N4S+N4S+@A=N2A+@B
+k:@K
+@A= N2 O2 NO N4S O3P
+@B= N2 O2 NO N4S O3P
+@K= 1.7e-33 1.7e-33 1.7e-33 1e-32 1e-32
+%[end]
+
+%[MULTI]
+REACTION:N4S+N4S+@A=N2B+@B
+k:@K
+@A= N2 O2 NO N4S O3P
+@B= N2 O2 NO N4S O3P
+@K= 2.4e-33 2.4e-33 2.4e-33 1.4e-32 1.4e-32
+%[end]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%  deactivation of N metastables [Capitelli2000, page 161]   %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+REACTION:N2D+O3P=N4S+O1D
+k:4e-13
+REACTION:N2D+O2=NO+O3P
+k:5.2e-12
+REACTION:N2D+NO=N2+O3P
+k:1.8e-10
+REACTION:N2D+N2O=NO+N2
+k:3.5e-12
+
+%[Guerra2004]
+REACTION:N2D+N2=N4S+N2
+k:1e-13*exp(-510/T)
+REACTION:N2P+N4S=N4S+N4S
+k:1.8e-12
+
+%[Gordiets1995]
+REACTION:N2P+O3P=N4S+O3P
+k:1e-12
+
+%[Guerra2004]
+REACTION:N2P+N4S=N2D+N4S
+k:6e-13
+REACTION:N2P+N2=N4S+N2
+k:6e-14
+REACTION:N2P+N2D=N2p+e
+k:1e-13
+
+%[Kossyi1992]
+REACTION:N2P+O2=NO+O3P
+k:2.6e-12
+REACTION:N2P+NO=N2A+O3P
+k:3e-11
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%  quenching and excitation of O2 [Capitelli2000, page 160]  %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+REACTION:O2a1+O3P=O2+O3P
+k:7e-16
+REACTION:O2a1+N4S=NO+O3P
+k:2e-14*exp(-600/T)
+REACTION:O2a1+O2=O2+O2
+k:3.8e-18*exp(-205/T)
+REACTION:O2a1+N2=O2+N2
+k:3e-21
+REACTION:O2a1+NO=O2+NO
+k:2.5e-11
+REACTION:O2a1+O3=O2+O2+O1D
+k:5.2e-11*exp(-2840/T)
+REACTION:O2a1+O2a1=O2+O2b1
+k:7e-28*T^3.8*exp(700/T)
+REACTION:O3P+O3=O2+O2a1
+k:1e-11*exp(-2300/T)
+REACTION:O2b1+O3P=O2a1+O3P
+k:8.1e-14
+REACTION:O2b1+O3P=O2+O1D
+k:3.4e-11*(300/T)^0.1*exp(-4200/T)
+REACTION:O2b1+O2=O2a1+O2
+k:4.3e-22*T^2.4*exp(-281/T)
+REACTION:O2b1+N2=O2a1+N2
+k:1.7e-15*(T/300)
+REACTION:O2b1+NO=O2a1+NO
+k:6e-14
+REACTION:O2b1+O3=O2+O2+O3P
+k:2.2e-11
+REACTION:O2_4.5+O3P=O2+O1S
+k:9e-12
+REACTION:O2_4.5+O2=O2b1+O2b1
+k:3e-13
+REACTION:O2_4.5+N2=O2b1+N2
+k:9e-15
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%  deactivation of O metastables [Capitelli2000, page 161]  %%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+REACTION:O1D+O3P=O3P+O3P
+k:8e-12
+REACTION:O1D+O2=O3P+O2
+k:6.4e-12*exp(67/T)
+REACTION:O1D+O2=O3P+O2a1
+k:1e-12
+REACTION:O1D+O2=O3P+O2b1
+k:2.6e-11*exp(67/T)
+REACTION:O1D+N2=O3P+N2
+k:2.3e-11
+REACTION:O1D+O3=O2+O3P+O3P
+k:1.2e-10
+REACTION:O1D+O3=O2+O2
+k:1.2e-10
+REACTION:O1D+NO=O2+N4S
+k:1.7e-10
+REACTION:O1D+N2O=NO+NO
+k:7.2e-11
+REACTION:O1D+N2O=O2+N2
+k:4.4e-11
+
+%kossyi1992
+REACTION:O1S+O3P=O1D+O3P
+k:5e-11*exp(-300/T)
+REACTION:O1S+N4S=O3P+N4S
+k:1e-12
+%kossyi1992
+REACTION:O1S+O2=O1D+O2
+k:1.3e-12*exp(-850/T)
+
+REACTION:O1S+O2=O3P+O3P+O3P
+k:3e-12*exp(-850/T)
+REACTION:O1S+N2=O3P+N2
+k:1e-17
+REACTION:O1S+O2a1=O3P+O2_4.5
+k:1.1e-10
+REACTION:O1S+O2a1=O1D+O2b1
+k:2.9e-11
+REACTION:O1S+O2a1=O3P+O3P+O3P
+k:3.2e-11
+REACTION:O1S+NO=O3P+NO
+k:2.9e-10
+REACTION:O1S+NO=O1D+NO
+k:5.1e-10
+REACTION:O1S+O3=O2+O2
+k:2.9e-10
+REACTION:O1S+O3=O2+O3P+O1D
+k:2.9e-10
+REACTION:O1S+N2O=O3P+N2O
+k:6.3e-12
+REACTION:O1S+N2O=O1D+N2O
+k:3.1e-12
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% bimolecular nitrogen-oxygen reactions [Capitelli2000, page 168] %%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%remarque : je ne met pas les reactions a haute temperature
+
+REACTION:N4S+NO=O3P+N2
+k:1.8e-11*(T/300)^0.5
+
+REACTION:N4S+O2=O3P+NO
+k:3.2e-12*(T/300)*exp(-3150/T)
+
+REACTION:N4S+NO2=O3P+O3P+N2
+k:9.1e-13
+
+REACTION:N4S+NO2=O3P+N2O
+k:3e-12
+
+REACTION:N4S+NO2=N2+O2
+k:7e-13
+
+REACTION:N4S+NO2=NO+NO
+k:2.3e-12
+
+%commentee dans set ZDplaskin
+%REACTION:N4S+O3=NO+O2
+%k:2e-16
+
+%haute temperature => commenté
+%REACTION:O3P+N2=N4S+NO
+%k:3e-10*exp(-38370/T)
+
+%haute temperature => commenté
+%REACTION:O3P+NO=N4S+O2
+%k:
+
+REACTION:O3P+NO=NO2
+k:4.2e-18
+
+REACTION:O3P+NO2=NO+O2
+k:9.1e-12*(T/300)^0.18
+
+REACTION:O3P+NO3=O2+NO2
+k:1e-11
+
+REACTION:NO+O3=O2+NO2
+k:2.5e-13*exp(-765/T)
+
+REACTION:NO+NO3=NO2+NO2
+k:1.7e-11
+
+REACTION:NO2+O3=O2+NO3
+k:1.2e-13*exp(-2450/T)
+
+REACTION:NO2+NO3=NO+NO2+O2
+k:2.3e-13*exp(-1600/T)
+
+REACTION:NO3+NO3=O2+NO2+NO2
+k:4.3e-12*exp(-3850/T)
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    dissociation of nitrogen-oxygen molecules [Capitelli2000, page 169]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%aucune de ces reactions n'est prise en compte => uniquement haute temperature
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   recombination of nitrogen-oxygen molecules [Capitelli2000, page 170]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+REACTION:N4S+N4S+N2=N2+N2
+k:max(8.3e-34*exp(500/T),1.91e-33)
+
+%[MULTI]
+REACTION:N4S+N4S+@A=N2+@A
+k:@K*1.8e-33*exp(435/T)
+
+@A= O2 NO N4S O3P
+@K= 1 1 3 3
+%[end]
+
+REACTION:O3P+O3P+N2=O2+N2
+k:max(2.8e-34*exp(720/T),1e-33*(300/T)^0.41)
+
+%[MULTI]
+REACTION:O3P+O3P+@A=O2+@A
+k:@K*4e-33*(300/T)^0.41
+
+@A= O2 N4S O3P NO
+@K= 1 0.8 3.6 0.17
+%[end]
+
+%[MULTI]
+REACTION:N4S+O3P+@A=NO+@A
+k:1e-32*(300/T)^0.5
+@A= N2 O2
+%[end]
+
+%[MULTI]
+REACTION:N4S+O3P+@A=NO+@A
+k:1.8e-31*(300/T)
+@A= N4S O3P NO
+%[end]
+
+REACTION:O3P+O2+N2=O3+N2
+k:max(5.8e-34*(300/T)^2.8,5.4e-34*(300/T)^1.9)
+
+%[MULTI]
+REACTION:O3P+O2+@A=O3+@A
+k:7.6e-34*(300/T)^1.9
+@A= O2 NO
+%[end]
+
+%[MULTI]
+REACTION:O3P+O2+@A=O3+@A
+k:min(3.9e-33*(300/T)^1.9,1.1e-34*exp(1060/T))
+@A= N4S O3P
+%[end]
+
+%[MULTI]
+REACTION:O3P+NO+@A=NO2+@A
+k:@K*1.2e-31*(300/T)^1.8
+@A= N2 O2 NO
+@K= 1 0.78 0.78
+%[end]
+
+%[MULTI]
+REACTION:O3P+NO2+@A=NO3+@A
+k:@K*8.9e-32*(300/T)^2
+@A= N2 O2 N4S O3P NO
+@K= 1 1 13 13 2.4
+%[end]
+
+
+REACTION:NO2+NO3+ANY_NEUTRAL=N2O5+ANY_NEUTRAL
+k:3.7e-30*(300/T)^4.1
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       positive ion reactions [Capitelli2000, page 179]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+REACTION:Np+O3P=N4S+Op
+k:1e-12
+
+REACTION:Np+O2=O2p+N4S
+k:2.8e-10
+
+REACTION:Np+O2=NOp+O3P
+k:2.5e-10
+
+REACTION:Np+O2=Op+NO
+k:2.8e-11
+
+REACTION:Np+O3=NOp+O2
+k:5e-10
+
+REACTION:Np+NO=NOp+N4S
+k:8e-10
+
+REACTION:Np+NO=N2p+O3P
+k:3e-12
+
+REACTION:Np+NO=Op+N2
+k:1e-12
+
+REACTION:Np+N2O=NOp+N2
+k:5.5e-10
+
+
+
+
+
+
+REACTION:Op+N2=NOp+N4S
+k:(1.5-2e-3*Teff+9.6e-7*Teff^2)*1e-12
+
+REACTION:Op+O2=O2p+O3P
+k:2e-11*(300/Teff)^0.5
+
+REACTION:Op+O3=O2p+O2
+k:1e-10
+
+REACTION:Op+NO=NOp+O3P
+k:2.4e-11
+
+REACTION:Op+NO=O2p+N4S
+k:3e-12
+
+REACTION:Op+N2D=Np+O3P
+k:1.3e-10
+
+REACTION:Op+N2O=NOp+NO
+k:2.3e-10
+
+REACTION:Op+N2O=N2Op+O3P
+k:2.2e-10
+
+REACTION:Op+N2O=O2p+N2
+k:2e-11
+
+REACTION:Op+NO2=NO2p+O3P
+k:1.6e-9
+
+REACTION:N2p+O2=O2p+N2
+k:6e-11*(300/Teff)^0.5
+
+REACTION:N2p+O3P=NOp+N4S
+k:1.3e-10*(300/Teff)^0.5
+
+REACTION:N2p+O3=O2p+O3P+N2
+k:1e-10
+
+REACTION:N2p+N4S=Np+N2
+k:7.2e-13*(Teff/300)
+
+REACTION:N2p+NO=NOp+N2
+k:3.3e-10
+
+REACTION:N2p+N2O=N2Op+N2
+k:5e-10
+
+REACTION:N2p+N2O=NOp+N4S+N2
+k:4e-10
+
+
+
+
+
+
+REACTION:O2p+N2=NOp+NO
+k:1e-17
+
+REACTION:O2p+N4S=NOp+O3P
+k:1.2e-10
+
+REACTION:O2p+NO=NOp+O2
+k:6.3e-10
+
+REACTION:O2p+NO2=NOp+O3
+k:1e-11
+
+REACTION:O2p+NO2=NO2p+O2
+k:6.6e-10
+
+
+
+
+
+REACTION:N3p+O2=O2p+N4S+N2
+k:2.3e-11
+
+REACTION:N3p+O2=NO2p+N2
+k:4.4e-11
+
+REACTION:N3p+N4S=N2p+N2
+k:6.6e-11
+
+REACTION:N3p+NO=NOp+N4S+N2
+k:7e-11
+
+REACTION:N3p+NO=N2Op+N2
+k:7e-11
+
+
+
+
+REACTION:NO2p+NO=NOp+NO2
+k:2.9e-10
+
+REACTION:N2Op+NO=NOp+N2O
+k:2.9e-10
+
+
+
+
+REACTION:N4p+N2=N2p+N2+N2
+k:min(2.1e-16*exp(Teff/121),1e-10)
+
+REACTION:N4p+O2=O2p+N2+N2
+k:2.5e-10
+
+REACTION:N4p+O3P=Op+N2+N2
+k:2.5e-10
+
+REACTION:N4p+N4S=Np+N2+N2
+k:1e-11
+
+REACTION:N4p+NO=NOp+N2+N2
+k:4e-10
+
+
+
+
+REACTION:O4p+N2=O2pN2+O2
+k:4.6e-12*(Teff/300)^2.5*exp(-2650/Teff)
+
+REACTION:O4p+O2=O2p+O2+O2
+k:3.3e-6*(300/Teff)^4*exp(-5030/Teff)
+
+REACTION:O4p+O2a1=O2p+O2+O2
+k:1e-10
+
+REACTION:O4p+O2b1=O2p+O2+O2
+k:1e-10
+
+REACTION:O4p+O3P=O2p+O3
+k:3e-10
+
+REACTION:O4p+NO=NOp+O2+O2
+k:1e-10
+
+
+
+
+
+
+REACTION:O2pN2+N2=O2p+N2+N2
+k:1.1e-6*(300/Teff)^5.3*exp(-2360/Teff)
+
+REACTION:O2pN2+O2=O4p+N2
+k:1e-9
+
+
+
+
+
+
+REACTION:Np+N2+N2=N3p+N2
+k:1.7e-29*(300/Teff)^2.1
+
+REACTION:Np+O3P+ANY_NEUTRAL=NOp+ANY_NEUTRAL
+k:1e-29
+
+REACTION:Np+N4S+ANY_NEUTRAL=N2p+ANY_NEUTRAL
+k:1e-29
+
+REACTION:Op+N2+ANY_NEUTRAL=NOp+N4S+ANY_NEUTRAL
+k:6e-29*(300/Teff)^2
+
+REACTION:Op+O3P+ANY_NEUTRAL=O2p+ANY_NEUTRAL
+k:1e-29
+
+REACTION:Op+N4S+ANY_NEUTRAL=NOp+ANY_NEUTRAL
+k:1e-29
+
+
+
+
+REACTION:N2p+N2+N2=N4p+N2
+k:5.2e-29*(300/Teff)^2.2
+
+REACTION:N2p+N4S+N2=N3p+N2
+k:9e-30*exp(400/Teff)
+
+
+
+REACTION:O2p+O2+O2=O4p+O2
+k:2.4e-30*(300/Teff)^3.2
+
+REACTION:O2p+N2+N2=O2pN2+N2
+k:9.1e-31*(300/Teff)^2
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%         negative ion reactions [Capitelli2000, pages 182-183]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+REACTION:Om+O2a1=O2m+O3P
+k:1e-10
+REACTION:Om+O3=O3m+O3P
+k:8e-10
+REACTION:Om+NO2=NO2m+O3P
+k:1.2e-9
+REACTION:Om+N2O=NOm+NO
+k:2e-10
+REACTION:Om+N2O=N2Om+O3P
+k:2e-12
+
+
+
+REACTION:O2m+O3P=Om+O2
+k:3.3e-10
+REACTION:O2m+O3=O3m+O2
+k:3.5e-10
+REACTION:O2m+NO2=NO2m+O2
+k:7e-10
+REACTION:O2m+NO3=NO3m+O2
+k:5e-10
+%REACTION:O2m+N2O=O3m+N2
+%k:1e-12
+%commentee dans ZDplaskin avec k<1e-12
+
+REACTION:O3m+O3P=O2m+O2
+k:1e-11
+%REACTION:O3m+N2=NO2m+NO
+%k:5e-14
+%commentee dans ZDplaskin avec k<5e-14
+REACTION:O3m+NO=NO3m+O3P
+k:1e-11
+REACTION:O3m+NO=NO2m+O2
+k:2.6e-12
+REACTION:O3m+NO2=NO2m+O3
+k:7e-11
+REACTION:O3m+NO2=NO3m+O2
+k:2e-11
+REACTION:O3m+NO3=NO3m+O3
+k:5e-10
+
+REACTION:NOm+O2=O2m+NO
+k:5e-10
+REACTION:NOm+NO2=NO2m+NO
+k:7.4e-10
+REACTION:NOm+N2O=NO2m+N2
+k:2.8e-14
+REACTION:NO2m+O3=NO3m+O2
+k:1.8e-11
+REACTION:NO2m+NO2=NO3m+NO
+k:4e-12
+REACTION:NO2m+NO3=NO3m+NO2
+k:5e-10
+REACTION:NO2m+N2O5=NO3m+NO2+NO2
+k:7e-10
+REACTION:NO3m+NO=NO2m+NO2
+k:3e-15
+
+
+%[MULTI]
+REACTION:O4m+@A=O2m+O2+@A
+k:1e-10*exp(-1044/Teff)
+@A= N2 O2
+%[end]
+
+
+
+
+REACTION:O4m+O3P=O3m+O2
+k:4e-10
+REACTION:O4m+O3P=Om+O2+O2
+k:3e-10
+REACTION:O4m+O2a1=O2m+O2+O2
+k:1e-10
+REACTION:O4m+O2b1=O2m+O2+O2
+k:1e-10
+REACTION:O4m+NO=NO3m+O2
+k:2.5e-10
+REACTION:Om+O2+ANY_NEUTRAL=O3m+ANY_NEUTRAL
+k:1.1e-30*(300/Teff)
+REACTION:Om+NO+ANY_NEUTRAL=NO2m+ANY_NEUTRAL
+k:1e-29
+REACTION:O2m+O2+ANY_NEUTRAL=O4m+ANY_NEUTRAL
+k:3.5e-31*(300/Teff)
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%         ion-ion recombination [kossyi 1992]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%[MULTI]
+REACTION:Om+@A=O3P+@B
+k:2e-7*(300/T)^0.5
+%c est Tion normalement 
+@A= Np N2p Op O2p NOp N2Op NO2p
+@B= N4S N2 O3P O2 NO N2O NO2
+%[end]
+
+%[MULTI]
+REACTION:O2m+@A=O2+@B
+k:2e-7*(300/T)^0.5
+%c est Tion normalement 
+@A= Np N2p Op O2p NOp N2Op NO2p
+@B= N4S N2 O3P O2 NO N2O NO2
+%[end]
+
+%[MULTI]
+REACTION:O3m+@A=O3+@B
+k:2e-7*(300/T)^0.5
+%c est Tion normalement 
+@A= Np N2p Op O2p NOp N2Op NO2p
+@B= N4S N2 O3P O2 NO N2O NO2
+%[end]
+
+%[MULTI]
+REACTION:NOm+@A=NO+@B
+k:2e-7*(300/T)^0.5
+%c est Tion normalement 
+@A= Np N2p Op O2p NOp N2Op NO2p
+@B= N4S N2 O3P O2 NO N2O NO2
+%[end]
+
+%[MULTI]
+REACTION:N2Om+@A=N2O+@B
+k:2e-7*(300/T)^0.5
+%c est Tion normalement 
+@A= Np N2p Op O2p NOp N2Op NO2p
+@B= N4S N2 O3P O2 NO N2O NO2
+%[end]
+
+%[MULTI]
+REACTION:NO2m+@A=NO2+@B
+k:2e-7*(300/T)^0.5
+%c est Tion normalement 
+@A= Np N2p Op O2p NOp N2Op NO2p
+@B= N4S N2 O3P O2 NO N2O NO2
+%[end]
+
+%[MULTI]
+REACTION:NO3m+@A=NO3+@B
+k:2e-7*(300/T)^0.5
+%c est Tion normalement 
+@A= Np N2p Op O2p NOp N2Op NO2p
+@B= N4S N2 O3P O2 NO N2O NO2
+%[end]
+
+%[MULTI]
+REACTION:Om+@A=O3P+@B
+k:1e-7
+%c est Tion normalement 
+@A= N2p N3p N4p O2p O4p NOp N2Op NO2p O2pN2
+@B= N4S+N4S N4S+N2 N2+N2 O3P+O3P O2+O2 N4S+O3P N2+O3P N4S+O2 O2+N2
+%[end]
+
+%[MULTI]
+REACTION:O2m+@A=O2+@B
+k:1e-7
+%c est Tion normalement 
+@A= N2p N3p N4p O2p O4p NOp N2Op NO2p O2pN2
+@B= N4S+N4S N4S+N2 N2+N2 O3P+O3P O2+O2 N4S+O3P N2+O3P N4S+O2 O2+N2
+%[end]
+
+%[MULTI]
+REACTION:O3m+@A=O3+@B
+k:1e-7
+%c est Tion normalement 
+@A= N2p N3p N4p O2p O4p NOp N2Op NO2p O2pN2
+@B= N4S+N4S N4S+N2 N2+N2 O3P+O3P O2+O2 N4S+O3P N2+O3P N4S+O2 O2+N2
+%[end]
+
+%[MULTI]
+REACTION:NOm+@A=NO+@B
+k:1e-7
+%c est Tion normalement 
+@A= N2p N3p N4p O2p O4p NOp N2Op NO2p O2pN2
+@B= N4S+N4S N4S+N2 N2+N2 O3P+O3P O2+O2 N4S+O3P N2+O3P N4S+O2 O2+N2
+%[end]
+
+%[MULTI]
+REACTION:N2Om+@A=N2O+@B
+k:1e-7
+%c est Tion normalement 
+@A= N2p N3p N4p O2p O4p NOp N2Op NO2p O2pN2
+@B= N4S+N4S N4S+N2 N2+N2 O3P+O3P O2+O2 N4S+O3P N2+O3P N4S+O2 O2+N2
+%[end]
+
+%[MULTI]
+REACTION:NO2m+@A=NO2+@B
+k:1e-7
+%c est Tion normalement 
+@A= N2p N3p N4p O2p O4p NOp N2Op NO2p O2pN2
+@B= N4S+N4S N4S+N2 N2+N2 O3P+O3P O2+O2 N4S+O3P N2+O3P N4S+O2 O2+N2
+%[end]
+
+%[MULTI]
+REACTION:NO3m+@A=NO3+@B
+k:1e-7
+%c est Tion normalement 
+@A= N2p N3p N4p O2p O4p NOp N2Op NO2p O2pN2
+@B= N4S+N4S N4S+N2 N2+N2 O3P+O3P O2+O2 N4S+O3P N2+O3P N4S+O2 O2+N2
+%[end]
+
+%[MULTI]
+REACTION:O4m+@A=O2+O2+@B
+k:1e-7
+%c est Tion normalement 
+@A= Np N2p Op O2p NOp N2Op NO2p N3p N4p O4p O2pN2
+@B= N4S N2 O3P O2 NO N2O NO2 N2+N4S N2+N2 O2+O2 O2+N2
+%[end]
+
+%[MULTI]
+REACTION:Om+@A+ANY_NEUTRAL=O3P+@B+ANY_NEUTRAL
+k:2e-25*(300/T)^2.5
+%c est Tion normalement 
+@A= Np N2p Op O2p NOp
+@B= N4S N2 O3P O2 NO
+%[end]
+
+%[MULTI]
+REACTION:O2m+@A+ANY_NEUTRAL=O2+@B+ANY_NEUTRAL
+k:2e-25*(300/T)^2.5
+%c est Tion normalement 
+@A= Np N2p Op O2p NOp
+@B= N4S N2 O3P O2 NO
+%[end]
+
+%[MULTI]
+REACTION:Om+@A+ANY_NEUTRAL=@B+ANY_NEUTRAL
+k:2e-25*(300/T)^2.5
+%c est Tion normalement 
+@A= Np N2p Op O2p NOp
+@B= NO N2O O2 O3 NO2
+%[end]
+
+%[MULTI]
+REACTION:O2m+@A+ANY_NEUTRAL=@B+ANY_NEUTRAL
+k:2e-25*(300/T)^2.5
+%c est Tion normalement 
+@A= Np Op NOp
+@B= NO2 O3 NO3
+%[end]
+
+%%%%%%
+% 3 body recombination of O3m NO- N2Om NO2m NO3m has to be verified 
+%%%%%%
+
+
+%[MULTI]
+REACTION:O3m+@A+ANY_NEUTRAL=O3+@B+ANY_NEUTRAL
+k:2e-25*(300/T)^2.5
+%c est Tion normalement 
+@A= Np N2p Op O2p NOp N2Op NO2p
+@B= N4S N2 O3P O2 NO N2O NO2
+%[end]
+
+%[MULTI]
+REACTION:NOm+@A+ANY_NEUTRAL=NO+@B+ANY_NEUTRAL
+k:2e-25*(300/T)^2.5
+%c est Tion normalement 
+@A= Np N2p Op O2p NOp N2Op NO2p
+@B= N4S N2 O3P O2 NO N2O NO2
+%[end]
+
+%[MULTI]
+REACTION:N2Om+@A+ANY_NEUTRAL=N2O+@B+ANY_NEUTRAL
+k:2e-25*(300/T)^2.5
+%c est Tion normalement 
+@A= Np N2p Op O2p NOp N2Op NO2p
+@B= N4S N2 O3P O2 NO N2O NO2
+%[end]
+
+%[MULTI]
+REACTION:NO2m+@A+ANY_NEUTRAL=NO2+@B+ANY_NEUTRAL
+k:2e-25*(300/T)^2.5
+%c est Tion normalement 
+@A= Np N2p Op O2p NOp N2Op NO2p
+@B= N4S N2 O3P O2 NO N2O NO2
+%[end]
+
+%[MULTI]
+REACTION:NO3m+@A+ANY_NEUTRAL=NO3+@B+ANY_NEUTRAL
+k:2e-25*(300/T)^2.5
+%c est Tion normalement 
+@A= Np N2p Op O2p NOp N2Op NO2p
+@B= N4S N2 O3P O2 NO N2O NO2
+%[end]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%Pertes aux parois (issu des réactions ajoutées dans set 100%kossyi)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%il faut prévoir une réaction de pertes aux parois pour chaque espece qu'on ajoute
+
+%losses of neutrals by diffusion to the walls
+%--------------------------------------------
+REACTION:N4S=N4S_w
+k:WALL_DIF
+REACTION:N2P=N2P_w
+k:WALL_DIF
+REACTION:N2D=N2D_w
+k:WALL_DIF
+
+REACTION:N2A=N2A_w
+k:WALL_DIF
+REACTION:N2a1=N2a1_w
+k:WALL_DIF
+REACTION:N2B=N2B_w
+k:WALL_DIF
+REACTION:N2C=N2C_w
+k:WALL_DIF
+
+REACTION:O2a1=O2a1_w
+k:WALL_DIF
+
+REACTION:O2b1=O2b1_w
+k:WALL_DIF
+
+REACTION:O2A=O2A_w
+k:WALL_DIF
+
+REACTION:O3P=O3P_w
+k:WALL_DIF
+
+REACTION:O1S=O1S_w
+k:WALL_DIF
+
+REACTION:O1D=O1D_w
+k:WALL_DIF
+
+REACTION:NO=NO_w
+k:WALL_DIF
+
+REACTION:NO2=NO2_w
+k:WALL_DIF
+
+REACTION:NO3=NO3_w
+k:WALL_DIF
+
+REACTION:O3=O3_w
+k:WALL_DIF
+
+REACTION:N2O=N2O_w
+k:WALL_DIF
+
+REACTION:N2O4=N2O4_w
+k:WALL_DIF
+
+REACTION:N2O5=N2O5_w
+k:WALL_DIF
+
+%reaction of recombination of ions to the walls
+%----------------------------------------------
+%adsorption/recombinaison
+REACTION:Np=N4S
+k:WALL_ADS
+
+%adsorption/recombinaison
+REACTION:N2p=N4S+N4S
+k:WALL_ADS
+
+%adsorption/recombinaison
+REACTION:N3p=N4S+N2
+k:WALL_ADS
+
+%adsorption/recombinaison
+REACTION:N4p=N2+N2
+k:WALL_ADS
+
+%adsorption/recombinaison
+REACTION:NOp=N4S+O3P
+k:WALL_ADS
+
+
+%---ajout simon mai 2020 ----- 
+%adsorption/recombinaison
+REACTION:O2p=O3P+O3P
+k:WALL_ADS
+
+%adsorption/recombinaison
+REACTION:Om=O3P
+k:WALL_ADS
+
+%---ajout corentin juin 2020 ----- 
+%adsorption/recombinaison
+REACTION:Op=O3P
+k:WALL_ADS
+
+%adsorption/recombinaison
+REACTION:O4p=O2+O2
+k:WALL_ADS
+
+%adsorption/recombinaison
+REACTION:O2m=O2
+k:WALL_ADS
+
+%adsorption/recombinaison
+REACTION:O3m=O2+O3P
+k:WALL_ADS
+
+%adsorption/recombinaison
+REACTION:O4m=O2+O2
+k:WALL_ADS
+
+%adsorption/recombinaison
+REACTION:NO2p=NO+O3P
+k:WALL_ADS
+
+%adsorption/recombinaison
+REACTION:N2Op=N2+O3P
+k:WALL_ADS
+
+%adsorption/recombinaison
+REACTION:NOm=NO
+k:WALL_ADS
+
+%adsorption/recombinaison
+REACTION:NO2m=NO2
+k:WALL_ADS
+
+%adsorption/recombinaison
+REACTION:NO3m=NO3
+k:WALL_ADS
+
+%adsorption/recombinaison
+REACTION:N2Om=N2O
+k:WALL_ADS
+
+%adsorption/recombinaison
+REACTION:NOpNO=NO+NO
+k:WALL_ADS
+
+%adsorption/recombinaison
+REACTION:NOpN2=NO+N2
+k:WALL_ADS
+
+%adsorption/recombinaison
+REACTION:NOpO2=NO+O2
+k:WALL_ADS
+
+%adsorption/recombinaison
+REACTION:O2pN2=O2+N2
+k:WALL_ADS
+
+%AJOUT 14/01/2021 pas dans kossyi
+%adsorption/recombinaison
+REACTION:NO3*m=NO3
+k:WALL_ADS
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+END
+
+
+
