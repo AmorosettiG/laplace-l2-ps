@@ -96,7 +96,12 @@ class SpeciesList:
                 
                 self.species_List[i].nameSpecies=self.species_List[i].nameSpecies.replace('p','')   
                 self.species_List[i].nameSpecies=self.species_List[i].nameSpecies+'p'
-                # We don't translate it to '+' or '-' because the java file needs to be written like that for the species (error on Comsol if there + or - on species)
+                
+                ########## Translation of 'p' and 'm' on the species causing error on Comsol
+                
+                # self.species_List[i].nameSpecies=self.species_List[i].nameSpecies.replace('p','+')  # Tranlating it to '+' or '-' because the java file needs to be written like that)
+                
+                ##########
                 
                 after_change=self.species_List[i].nameSpecies                                       # after_change is the name after we put the 'p' at the end
                 print(f'Warning : {before_change} changed to {after_change}')                       # print to warn the user. Can be useful if there are species with a 'p' in the middle of the name that is not a positive charge but part of the name
@@ -106,7 +111,13 @@ class SpeciesList:
                 before_change=self.species_List[i].nameSpecies                                      # Doing exactly the same for species with 'm' in their name
                
                 self.species_List[i].nameSpecies=self.species_List[i].nameSpecies.replace('m','') 
-                self.species_List[i].nameSpecies=self.species_List[i].nameSpecies+'m'       
+                self.species_List[i].nameSpecies=self.species_List[i].nameSpecies+'m'    
+                
+                ########## Translation of 'p' and 'm' on the species causing error on Comsol
+                
+                # self.species_List[i].nameSpecies=self.species_List[i].nameSpecies.replace('m','-') 
+                
+                ##########
                 
                 after_change=self.species_List[i].nameSpecies
                 print(f'Warning : {before_change} changed to {after_change}')                
