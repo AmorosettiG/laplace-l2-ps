@@ -1,5 +1,5 @@
 # Intership at [LAPLACE](http://www.laplace.univ-tlse.fr/)
-### Optoinal intership realised on June-July 2021 (Second year of undegraduate physics degree), supervised by [Hubert Caquineau](http://www.laplace.univ-tlse.fr/CAQUINEAU-Hubert)
+### Optional intership realised on June-July 2021 (Second year of undegraduate physics degree), supervised by [Hubert Caquineau](http://www.laplace.univ-tlse.fr/CAQUINEAU-Hubert)
 
 > Python development of a physico-chemical data pre-processing software to a commercial software for solving partial differential equations
 
